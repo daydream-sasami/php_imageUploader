@@ -16,6 +16,14 @@ function h($s) {
   exit;
 }
 
+require 'ImageUploader.php';
+
+$uploader = new \MyApp\ImageUploader();
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $uploader->upload();
+}
+
 ?>
 
 
