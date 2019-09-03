@@ -5,10 +5,10 @@ define('THUMBNAIL_WIDTH', 400);
 define('IMAGES_DIR', __DIR__ . '/images');
 define('THUMBNAIL_DIR', __DIR__ . '/thumbs');
 
-// if (!function_exists('imagecreatetruecolor')) {
-//   echo 'GD not installed';
-//   exit;
-// }
+if (!function_exists('imagecreatetruecolor')) {
+  echo 'GD not installed';
+  exit;
+}
 
 function h($s) {
   return htmlspecialchars($s, ENT_QUOTES, 'UTF-8');
