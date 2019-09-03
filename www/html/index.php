@@ -1,5 +1,4 @@
 <?php
-
 ini_set('display_errors', 1);
 define('MAX_FILE_SIZE', 1 * 1024 * 1024); //1MB
 define('THUMBNAIL_WIDTH', 400);
